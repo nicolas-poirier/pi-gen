@@ -1,1 +1,13 @@
 hostapd
+tcpdump
+traceroute
+nmap
+tshark
+wireshark
+aircrack-ng
+isc-dhcp-server
+iperf
+iperf3
+ufw
+dnsutils
+iputils-arping
