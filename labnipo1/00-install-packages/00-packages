@@ -7,13 +7,11 @@ iperf3
 isc-dhcp-server
 iputils-arping
 nmap
-python3-pip
-python3-numpy
-python3-serial
-python3-tk thonny
 rfkill
 tcpdump
 traceroute
 tshark
 ufw
+wireless-tools
 wireshark
+wpasupplicant
