@@ -8,6 +8,8 @@ install -m 644 files/etc/systemd/system/autohotspot.service "${ROOTFS_DIR}/etc/s
 install -m 644 files/etc/wpa_supplicant/wpa_supplicant.conf "${ROOTFS_DIR}/etc/wpa_supplicant/wpa_supplicant.conf"
 install -m 644 files/usr/bin/autohotspotN "${ROOTFS_DIR}/usr/bin/autohotspotN"
 
+chmod +x "${ROOTFS_DIR}/usr/bin/autohotspotN"
+
 on_chroot << EOF
 
 # hostapd and dnsmasq will be controlled by the autohotspot service
@@ -15,7 +17,6 @@ systemctl unmask hostapd
 systemctl disable hostapd
 systemctl disable dnsmasq
 
-chmod +x /usr/bin/autohotspotN
 systemctl enable autohotspot.service
 
 EOF
