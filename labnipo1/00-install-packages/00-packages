@@ -1,9 +1,15 @@
-aircrack-ng
-git
+# hotspot
 hostapd
+dnsmasq
+
+# wireless packet capture
+aircrack-ng
 iproute2
 net-tools
 tcpdump
 wireless-tools
 wireshark
 wpasupplicant
+
+# misc
+git
