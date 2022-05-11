@@ -1,6 +1,8 @@
 # pi-gen
 
 Tool used to create Raspberry Pi OS images. (Previously known as Raspbian).
++ added autohotspot and wireless packet capture functionnalities with the stage "labnipo1"
++ Removed stages 3 to 5 as the GUI and the aditionnal tools
 
 
 ## Dependencies
