@@ -1,0 +1,25 @@
+#La configuration de Systemd se base sur des unites (units) qui ont un nom et un type.
+ 
+######################################################################
+#La section [Unit] contient de l'information generique sur le service#
+######################################################################
+[Unit]
+Description=Automatically enable Hotspot when no labnipo SSID in range
+OnBootSec=2minutes
+
+#########################################################################
+#La section [Service] concerne l'information sur le service en lui-meme.#
+#########################################################################
+[Service]
+# Type de service (simple, forking, oneshot, dbus, notify, idle)
+Type=oneshot
+RemainAfterExit=yes
+#Lancer le script autohotspotN
+ExecStart=/usr/bin/autohotspotN
+Restart=on-failure
+
+##############################################################################################################################
+# La section [Install] s'occupe des circonstances et des declencheurs dans le cadre desquels le service devrait etre demarre.#
+##############################################################################################################################
+[Install]
+WantedBy=multi-user.target
