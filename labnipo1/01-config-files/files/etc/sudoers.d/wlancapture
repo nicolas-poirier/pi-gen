@@ -1,1 +1,0 @@
-labnipo ALL = (root) NOPASSWD: /sbin/iwconfig, /sbin/iw, /sbin/ifconfig, /bin/ip, /usr/bin/tcpdump, /usr/sbin/wpa_cli
